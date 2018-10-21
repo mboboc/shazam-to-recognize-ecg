@@ -7,10 +7,6 @@ title('Subplot 1: Input signal')
 
 %cu cat k-ul este mai mare cu atat exponentiala 
 %tinde mai repede catre zero iar functia de
-%convolutie se stabilizeaza mai repede
-
-%defazajul creste cu k-ul
-%amplitudinea creste cu k-ul
 k = 20;
 h = exp(-k*t);
 subplot(3,3,2)
