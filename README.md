@@ -1,18 +1,18 @@
-BOBOC MADALINA 323CD
+## Aplicatie de tip Shazam de analiza a unui semnal oarecare - semnale de tip EKG
+#### BOBOC MADALINA
 
-ex2:
-ex2.m 
--checkerul-
-Trece prin toate fisiere persoanelor si dechide baza de date 1m.mat.
-In functie de valoarea lui israw va fi selectat semnalul
-filtrat sau cel cu zgomot.
-Se apeleaza functia pentru toate persoanele, matchurile sunt numarate
-si afisate la sfarsit.
+##### ex2.m
+
+Programul deschide toate EKG-urile persoanelor din baza de date.
+In functie de valoarea lui israw(variabila care semnaleaza daca EKG-ul are
+sau nu zgomot) semnalul va fi analizat.
+Pentru acest subpunct israw e true(nu exista zgomot) deci se apeleaza functia
+de comparare pentru toate persoanele, matchurile sunt numarate si afisate la sfarsit.
 Daca nu sunt matchuri se afiseaza 0.
 
-ecg_function.m
-Functia primeste doi parametrii. Semnalul si tipul acestuia 
-(raw sau filtrat).
+##### ecg_function.m
+Functia primeste doi parametrii. Semnalul si tipul acestuia care poate fi
+raw sau filtrat.
 Daca ecg-ul este deja filtrat am facut fft pe functie, am calculat
 spectrul si dupa cu functia maxk am selectat cele mai mari
 n (am luat n = 20) aplitudini pentru vectorul caracteristic.
